@@ -1,4 +1,3 @@
-已思考若干秒
 
 
 ```markdown
@@ -8,7 +7,6 @@ A unified codebase for Physics-Informed Neural Networks (PINNs) enhanced with se
 
 ## Repository Layout
 
-```
 
 my-pinn-prune-finetune/
 ├── configs/              # YAML config files for all problems
@@ -23,8 +21,8 @@ my-pinn-prune-finetune/
 │   └── WInv.yaml
 ├── common/               # shared utilities and PINN definition
 │   ├── **init**.py
-│   ├── pinn\_model.py     # generic PINN MLP + learnable PDE params
-│   ├── partition\_data.py # data partitioning
+│   ├── pinn_model.py     # generic PINN MLP + learnable PDE params
+│   ├── partition_data.py # data partitioning
 │   ├── pruning.py        # iterative selective-prune routines
 │   └── evaluate.py       # unified evaluation metrics
 ├── assimilation/         # forward (data-assimilation) problems
@@ -34,20 +32,20 @@ my-pinn-prune-finetune/
 │   └── wave/
 ├── inverse/              # inverse PDE problems
 │   ├── beam/             # EInv
-│   ├── heat\_inv/         # HInv
-│   ├── navier\_stokes\_inv/# NSInv
-│   ├── poisson\_inv/      # PINv
-│   └── wave\_inv/         # WInv
+│   ├── heat_inv/         # HInv
+│   ├── navier_stokes_inv/# NSInv
+│   ├── poisson_inv/      # PINv
+│   └── wave_inv/         # WInv
 ├── scripts/              # alternative, single-step & criterion-based pruning
-│   ├── single\_step.py
-│   └── pruning\_criteria.py
+│   ├── single_step.py
+│   └── pruning_criteria.py
 ├── experiments/          # example Jupyter notebooks
 │   ├── PInv.ipynb
 │   └── Poisson.ipynb
 ├── README.md             # this file
 └── requirements.txt      # Python dependencies
 
-````
+
 
 ## Quickstart
 
@@ -130,3 +128,4 @@ my-pinn-prune-finetune/
   Drop new pruning routines into `scripts/` and add a `strategy` name in your configs.
 
 We welcome all improvements, issues and pull-requests!
+```
