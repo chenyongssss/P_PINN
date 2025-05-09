@@ -1,0 +1,47 @@
+data:
+  boundary_points: 200
+  initial_points: 100
+  noise_clean: 0.01
+  noise_noisy: 1.0
+  nt: 201
+  nx: 201
+  pde_points: 2000
+  ratio_clean: 0.4
+  train_size: 10000
+fine_tune:
+  epochs: 2000
+  lambda_b: 1.0
+  lambda_d: 1.0
+  lambda_i1: 1.0
+  lambda_i2: 1.0
+  lambda_pde: 0.1
+  lr: 0.001
+model:
+  hidden_dim: 100
+  hidden_layers: 5
+  in_dim: 2
+  init_c: 1.0
+  out_dim: 1
+partition:
+  eps: 0.05
+  w_data: 1.0
+  w_res: 0.001
+pruning:
+  alpha: 0.02
+  layers:
+  - 0
+  - 2
+  - 4
+  - 6
+  - 8
+  num_iter: 15
+  strategy: iterative
+seed: 42
+training:
+  epochs: 20000
+  lambda_b: 1.0
+  lambda_d: 1.0
+  lambda_i1: 1.0
+  lambda_i2: 1.0
+  lambda_pde: 1.0
+  lr: 0.001

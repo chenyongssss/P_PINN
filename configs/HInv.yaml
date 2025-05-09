@@ -1,0 +1,38 @@
+data:
+  boundary_points: 2048
+  initial_points: 2048
+  noise_clean: 0.01
+  noise_noisy: 1.0
+  pde_points: 8192
+  ratio_clean: 0.4
+  samples: 2500
+fine_tune:
+  epochs: 2000
+  lambda_bdy: 1.0
+  lambda_ini: 1.0
+  lambda_pde: 0.01
+  lr: 0.001
+model:
+  hidden_dim: 100
+  hidden_layers: 5
+  in_dim: 3
+  out_dim: 2
+partition:
+  eps: 0.01
+  w_data: 1.0
+  w_res: 0.001
+pruning:
+  alpha: 0.05
+  layers:
+  - 0
+  - 2
+  - 4
+  num_iter: 10
+  strategy: iterative
+seed: 42
+training:
+  epochs: 20000
+  lambda_bdy: 1.0
+  lambda_ini: 1.0
+  lambda_pde: 1.0
+  lr: 0.001

@@ -1,0 +1,39 @@
+data:
+  noise_clean: 0.01
+  noise_noisy: 0.5
+  obs_grid: 15
+  pde_points: 175
+  ratio_clean: 0.8
+  test_grid: 200
+fine_tune:
+  adam_epochs: 2000
+  lambda_d: 1.0
+  lambda_p: 0.005
+  lbfgs_epochs: 500
+  lr_adam: 0.001
+model:
+  hidden_dim: 100
+  hidden_layers: 5
+  in_dim: 2
+  out_dim: 1
+partition:
+  eps: 1
+  w_data: 0.01
+  w_res: 1.0e-05
+pruning:
+  alpha: 0.05
+  layers:
+  - 0
+  - 2
+  - 4
+  - 6
+  - 8
+  num_iter: 20
+  strategy: iterative
+seed: 42
+training:
+  adaptive_eps: 0.001
+  lambda_d_max: 1000
+  lbfgs_max_iter: 5000
+  lr_pretrain: 0.001
+  pretrain_epochs: 20000

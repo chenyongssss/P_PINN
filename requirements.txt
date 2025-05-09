@@ -1,0 +1,15 @@
+# Core dependencies
+numpy>=1.19.0
+scipy>=1.5.0
+PyYAML>=5.3.1
+torch>=1.8.0
+
+# Visualization & notebooks
+matplotlib>=3.3.0
+jupyterlab>=3.0.0
+
+# Utility
+tqdm>=4.50.0
+
+# (Optional) for experiments
+pandas>=1.1.0

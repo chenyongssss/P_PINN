@@ -1,0 +1,35 @@
+data:
+  N_train: 10000
+  mat_path: cylinder_nektar_wake.mat
+  noise_clean: 0.01
+  noise_noisy: 0.5
+  pde_points: 2000
+  ratio_clean: 0.4
+fine_tune:
+  epochs: 2000
+  lambda_pde: 0.05
+  lr: 0.001
+model:
+  hidden_dim: 100
+  hidden_layers: 5
+  in_dim: 3
+  out_dim: 3
+partition:
+  eps: 0.02
+  w_data: 1.0
+  w_res: 0.001
+pruning:
+  alpha: 0.05
+  layers:
+  - 0
+  - 2
+  - 4
+  - 6
+  - 8
+  num_iter: 20
+  strategy: iterative
+seed: 42
+training:
+  epochs: 20000
+  lambda_pde: 1.0
+  lr: 0.001
