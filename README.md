@@ -96,10 +96,11 @@ jupyter lab Poisson.ipynb
 ## Pruning Strategies
 
 * **iterative** (default) Multi-step heuristic in `common/pruning.py`.
-* **single_step** One-shot prune based on mean-difference scores.
-* **rms** RMS-based score: score = RMS(forget) / (RMS(retain)+ε).
-* **freq** Frequency-based score: proportion of positive activations.
-* **std** Standard deviation score: std(forget) / (std(retain)+ε).
+* **single_step** One-shot prune based on biased score, the same as iterative.
+* **abs** mean absolute-based score.
+* **rms** Root-mean_square-based score.
+* **freq** Frequency-based score.
+* **std** Standard deviation-based score.
 
 ## Contributing
 
