@@ -1,6 +1,6 @@
 
 
-
+```markdown
 # My PINN Prune–FineTune
 
 A unified codebase for Physics-Informed Neural Networks (PINNs) enhanced with selective neuron pruning and fine-tuning, supporting both data-assimilation (forward) and inverse PDE problems, plus a library of pruning strategies.
@@ -128,4 +128,4 @@ my-pinn-prune-finetune/
   Drop new pruning routines into `scripts/` and add a `strategy` name in your configs.
 
 We welcome all improvements, issues and pull-requests!
-
+```
