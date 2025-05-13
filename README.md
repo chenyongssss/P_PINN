@@ -110,4 +110,4 @@ jupyter lab Poisson.ipynb
    3. (Optional) add analysis notebook under `experiments/`
 * **Pruning research**: Drop new pruning routines into `scripts/` and add a `strategy` name in your configs.
 
-We welcome all improvements, issues and pull-requests!
+We sincerely welcome all improvements, issues and pull-requests!
