@@ -11,7 +11,7 @@ my-pinn-prune-finetune/
 │   ├── Poisson.yaml
 │   ├── Stokes.yaml
 │   ├── Wave.yaml
-│   ├── EInv.yaml
+│   ├── EBInv.yaml
 │   ├── HInv.yaml
 │   ├── NSInv.yaml
 │   ├── PINv.yaml
@@ -28,11 +28,11 @@ my-pinn-prune-finetune/
 │   ├── stokes/
 │   └── wave/
 ├── inverse/              # inverse PDE problems
-│   ├── beam/             # EInv
-│   ├── heat_inv/         # HInv
-│   ├── navier_stokes_inv/# NSInv
-│   ├── poisson_inv/      # PInv
-│   └── wave_inv/         # WInv
+│   ├── EBInv/            # Euler-beamer
+│   ├── HInv/             # Heat_inv
+│   ├── NSInv/            # Navier_Stokes_inv
+│   ├── PInv/             # poisson_inv
+│   └── WInv/             # wave_inv
 ├── scripts/              # alternative, single-step & criterion-based pruning
 │   ├── single_step.py
 │   └── pruning_criteria.py

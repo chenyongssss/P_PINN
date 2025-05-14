@@ -1,4 +1,4 @@
-# Inverse Euler–Bernoulli Beam Problem (EInv)
+# Inverse Euler–Bernoulli Beam Problem (EBInv)
 
 This folder implements a PINN-based inverse solver for the Euler–Bernoulli beam PDE:
 
