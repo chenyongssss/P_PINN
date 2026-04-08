@@ -1,11 +1,11 @@
-# My PINN Prune–FineTune
+# P-PINN
 
 A unified codebase for Physics-Informed Neural Networks (PINNs) enhanced with selective neuron pruning and fine-tuning, supporting both data-assimilation (forward) and inverse PDE problems, plus a library of pruning strategies.
 
 ## Repository Layout
 
 ```
-my-pinn-prune-finetune/
+pinn-prune-finetune/
 ├── configs/              # YAML config files for all problems
 │   ├── Heat.yaml
 │   ├── Poisson.yaml
